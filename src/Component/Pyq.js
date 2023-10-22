@@ -22,7 +22,7 @@ function Pyq() {
     const Nav = useNavigate();
     const callAboutPage = async () => {
         try {
-            const res = await fetch("http://localhost:4000/", {
+            const res = await fetch(`${process.env.REACT_APP_BASE_URL_S}`, {
                 method: "GET",
                 headers: {
                     Accept: "application/json",
