@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  /* background-color: #0F172A; */
+  background: linear-gradient(to top right, #1c2846, #000);
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.nav-btn a {
+  text-decoration: none;
+  color: #cfcfcf;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 8px;
+  margin: 0px 5px;
+  padding: 10px 12px;
+  transition: all 0.4s;
+}
+
+.ham {
+  display: none;
+}
+
+.nav-btn a:hover {
+  background-color: #1c2846;
+  border-radius: 8px;
+  transition: all 0.4s;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0px;
+}
+
+.nav-btn {
+  width: 50%;
+  text-align: end;
+}
+
+hr {
+  border: 1px solid #7e7e7e;
+}
+
+main {
+  margin: 60px 150px;
+}
+
+.main-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  text-decoration: none;
+  text-align: center;
+  justify-content: space-evenly;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.pyq-btn,
+.syll-btn,
+.mat-btn {
+  width: 20%;
+  padding: 15px;
+  background-color: #1c2846;
+  border-radius: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.185);
+  transition: all 0.3s;
+  text-decoration: none;
+  color: white;
+}
+
+.pyq-btn:hover,
+.syll-btn:hover,
+.mat-btn:hover {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.prompt-cont {
+  border: 1px solid #777474;
+  height: 200px;
+  margin: 100px 150px;
+  background-color: black;
+  border-radius: 8px;
+}
+
+.prompt-header {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: #1c2846;
+  padding: 8px 10px;
+}
+
+.prompt-header p {
+  color: white;
+  font-family: "Inconsolata", monospace;
+}
+
+#typedtext {
+  color: rgb(100, 98, 98);
+  font-family: "Inconsolata", monospace;
+  padding: 10px;
+}
+
+.mac {
+  display: flex;
+}
+
+.mac-cir {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: #cfcfcf;
+  margin: 0px 3px;
+}
+
+.mac-cir:nth-child(1) {
+  background-color: red;
+}
+
+.mac-cir:nth-child(2) {
+  background-color: yellow;
+}
+
+.mac-cir:nth-child(3) {
+  background-color: green;
+}
+
+#typedtext {
+  text-align: left;
+}
+
+@media only screen and (max-width: 1160px) {
+  main {
+    margin: 60px 47px;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  main {
+    margin: 60px 30px;
+  }
+
+  .prompt-cont {
+    margin: 100px 85px;
+  }
+}
+
+@media only screen and (max-width: 428px) {
+  .prompt-cont {
+    margin: 65px 11px;
+  }
+
+  #typedtext {
+    font-size: 14px;
+  }
+
+  .pyq-btn,
+  .syll-btn,
+  .mat-btn {
+    padding: 11px;
+    font-size: 12px;
+  }
+
+  .logo {
+    width: 70%;
+    text-align: left;
+    margin: 0px 14px;
+  }
+
+  .nav-btn-inner {
+    /* display: none; */
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #1c2846;
+    height: 100vh;
+    text-align: left;
+    right: 0;
+    top: 0;
+    padding-right: 50px;
+    transition: all 0.2s;
+    /* opacity: 0; */
+    width: 0;
+    visibility: hidden;
+    z-index: 4;
+  }
+
+  .one,two,three{
+    display: none;
+  }
+
+  .nav-btn{
+    width: 30%;
+  }
+  .ham {
+    display: block;
+    float: right;
+    margin: 0px 14px;
+    cursor: pointer;
+  }
+
+  .line {
+    /* text-align: right; */
+    height: 3px;
+    width: 25px;
+    background-color: aliceblue;
+    margin: 5px 0px;
+    border-radius: 2px;
+  }
+}

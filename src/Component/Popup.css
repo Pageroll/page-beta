@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  background-color: rgb(21, 27, 21);
 }
 
 .App-logo {
@@ -9,7 +8,6 @@
 }
 
 .App-header {
-  background-color: #0f1e38;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -81,4 +79,8 @@ input[type="submit"]:hover {
 }
 .input_name{
   color: red;
+}
+
+#typedtext{
+  color: white;
 }

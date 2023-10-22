@@ -4,7 +4,8 @@
 
 html,
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .App {
@@ -15,15 +16,15 @@ body {
   height: 40vmin;
   pointer-events: none;
 }
-
+/* 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
 .App-header {
-  background-color: #282c34;
+  /* background-color: #282c34; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -33,22 +34,318 @@ body {
   color: white;
 }
 
-.App-link {
+/* .App-link {
   color: #61dafb;
-}
+} */
 
-@keyframes App-logo-spin {
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
+} */
+
+/* -----------------------------------------PYQ CSSS------------------------------------------- */
+
+.pyqBody {
+  height: 100vh;
+  /* background-color: #000; */
+  background: linear-gradient(to top right, #18233c, #000);
 }
 
-.cmdBox{
-  background-color: black;
-  border: 1px solid #cfcfcf;
-  margin: 100px 300px;
-  height: 40vh;
+.pyqTopbar {
+  color: #fff;
+}
+
+.TbarCont {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.subject {
+  width: 25%;
+  /* background-color: red; */
+  padding: 15px 0px;
+  font-size: 25px;
+}
+
+.MinMaj {
+  width: 27.5%;
+  /* background-color: green; */
+  padding: 12px 0px 12px 10px;
+  text-align: left;
+}
+
+button.minor {
+  margin: 0px 10px;
+  padding: 6px 11px;
+  border-radius: 20px;
+  border: none;
+  background-color: #2d3a5a;
+  color: #93aae2;
+  cursor: pointer;
+}
+
+button.major {
+  padding: 6px 11px;
+  border-radius: 20px;
+  border: none;
+  color: #93aae2;
+  background-color: #000;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button.major:hover {
+  background-color: #2d3a5a;
+}
+
+.choice {
+  width: 27.5%;
+  /* background-color: green; */
+  padding: 15px 0px;
+}
+
+.year {
+  width: 20%;
+  /* background-color: yellow; */
+  padding: 15px 0px;
+  font-size: 25px;
+}
+
+.pyqBody hr {
+  background-color: #2d3a5a;
+  height: 0.2px;
+  border: none;
+}
+
+#branch {
+  padding: 6px 23px;
+  margin: 0px 7px;
+  border-radius: 50px;
+  color: #93aae2;
+  background-color: #2d3a5a;
+  border: none;
+  cursor: pointer;
+}
+
+#sem {
+  padding: 6px 20px;
+  margin: 0px 7px;
+  border: none;
+  border-radius: 50px;
+  color: #93aae2;
+  background-color: #2d3a5a;
+  cursor: pointer;
+}
+
+.pyqBodyView {
+  display: flex;
+}
+/* -----------------LeftBarr------------------- */
+
+.pyqLeftbar {
+  /* background-color: red; */
+  width: 25%;
+  height: 100vh;
+  border-right: 1px solid #2d3a5a;
+  /* overflow-y: scroll; */
+}
+
+.subList {
+  text-align: left;
+  height: 80vh;
+  overflow-y: scroll;
+}
+.subList ul {
+  padding: 20px 0px 0px;
+}
+.subList li {
+  list-style: none;
+  font-size: 20px;
+  margin: 10px 0px;
+  padding: 12px 20px;
+  color: #66769e;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.subList li:hover {
+  background-color: #1c2846;
+  color: #93aae2;
+}
+
+.pyqContView {
+  width: 55%;
+}
+
+.pyqRightbar {
+  width: 20%;
+  /* background-color: aqua; */
+  height: 100vh;
+  border-left: 1px solid #2d3a5a;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.yearList {
+  text-align: center;
+  height: 80vh;
+  overflow-y: scroll;
+}
+
+.test {
+  color: #93aae2;
+  padding: 0px 10px 100px;
+  height: 80vh;
+  font-size: 20px;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #93aae2;
+  border-radius: 50px;
+}
+
+.header {
+  font-size: 22px;
+  color: #ff00dd;
+}
+
+.head {
+  text-align: left;
+}
+
+.ques {
+  text-align: left;
+  color: #b3b3b3;
+  font-size: 17px;
+}
+
+.ques li {
+  list-style: decimal;
+}
+
+.optQue {
+  padding: 5px 0px 0px 20px;
+}
+
+.optQue li {
+  list-style: upper-alpha;
+}
+
+.options {
+  padding-left: 30px;
+}
+
+.options li {
+  list-style: lower-alpha;
+  width: 100%;
+  padding: 5px 0px;
+}
+
+.choice button {
+  background-color: #18233c;
+  border: none;
+  color: #93aae2;
+  padding: 5px 10px;
+  margin: 0px 8px;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.choice button:hover {
+  cursor: pointer;
+  background-color: #1c2846;
+}
+
+.ques img {
+  width: 650px;
+  height: 200px;
+}
+
+.progOpt li{
+  list-style: lower-alpha;
+}
+
+@media only screen and (max-width: 1025px) {
+  #branch {
+    padding: 6px 12px;
+  }
+
+  #sem {
+    padding: 6px 10px;
+  }
+  .MinMaj {
+    width: 20.5%;
+  }
+  .choice {
+    width: 33.5%;
+    text-align: left;
+  }
+
+  .pyqLeftbar {
+    width: 22%;
+  }
+
+  .pyqContView {
+    width: 58%;
+  }
+
+  .subList li {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .subList li {
+    font-size: 13px;
+  }
+
+  .header {
+    font-size: 19px;
+  }
+
+  .test {
+    font-size: 17px;
+  }
+
+  .ques {
+    font-size: 15px;
+  }
+
+  button.minor,
+  button.major {
+    font-size: 12px;
+  }
+
+  #branch,
+  #sem {
+    font-size: 12px;
+    padding: 6px 6px;
+  }
+
+  .subject {
+    font-size: 20px;
+    width: 22%;
+  }
+
+  .MinMaj {
+    width: 21.5%;
+  }
+
+  .choice {
+    width: 34.5%;
+  }
+
+  .year {
+    font-size: 20px;
+  }
 }
